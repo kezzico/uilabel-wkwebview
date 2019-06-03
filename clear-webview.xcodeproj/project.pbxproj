@@ -14,6 +14,9 @@
 		9BFF0AAA22A11C6800EEE481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF0AA822A11C6800EEE481 /* LaunchScreen.storyboard */; };
 		9BFF0AB522A11C6800EEE481 /* clear_webviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF0AB422A11C6800EEE481 /* clear_webviewTests.swift */; };
 		9BFF0AC022A11C6900EEE481 /* clear_webviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF0ABF22A11C6900EEE481 /* clear_webviewUITests.swift */; };
+		9BFF0ACE22A11D8B00EEE481 /* WKWebviewLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF0ACD22A11D8B00EEE481 /* WKWebviewLabel.swift */; };
+		9BFF0AD022A11E5500EEE481 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF0ACF22A11E5500EEE481 /* Raleway-BlackItalic.ttf */; };
+		9BFF0AD222A120E500EEE481 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF0AD122A120E500EEE481 /* UIView+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		9BFF0ABB22A11C6900EEE481 /* clear-webviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "clear-webviewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFF0ABF22A11C6900EEE481 /* clear_webviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clear_webviewUITests.swift; sourceTree = "<group>"; };
 		9BFF0AC122A11C6900EEE481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFF0ACD22A11D8B00EEE481 /* WKWebviewLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebviewLabel.swift; sourceTree = "<group>"; };
+		9BFF0ACF22A11E5500EEE481 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		9BFF0AD122A120E500EEE481 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				9BFF0AA622A11C6800EEE481 /* Assets.xcassets */,
 				9BFF0AA822A11C6800EEE481 /* LaunchScreen.storyboard */,
 				9BFF0AAB22A11C6800EEE481 /* Info.plist */,
+				9BFF0ACD22A11D8B00EEE481 /* WKWebviewLabel.swift */,
+				9BFF0AD122A120E500EEE481 /* UIView+Layout.swift */,
+				9BFF0ACF22A11E5500EEE481 /* Raleway-BlackItalic.ttf */,
 			);
 			path = "clear-webview";
 			sourceTree = "<group>";
@@ -229,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFF0AD022A11E5500EEE481 /* Raleway-BlackItalic.ttf in Resources */,
 				9BFF0AAA22A11C6800EEE481 /* LaunchScreen.storyboard in Resources */,
 				9BFF0AA722A11C6800EEE481 /* Assets.xcassets in Resources */,
 				9BFF0AA522A11C6500EEE481 /* Main.storyboard in Resources */,
@@ -256,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFF0AD222A120E500EEE481 /* UIView+Layout.swift in Sources */,
+				9BFF0ACE22A11D8B00EEE481 /* WKWebviewLabel.swift in Sources */,
 				9BFF0AA222A11C6500EEE481 /* ViewController.swift in Sources */,
 				9BFF0AA022A11C6500EEE481 /* AppDelegate.swift in Sources */,
 			);

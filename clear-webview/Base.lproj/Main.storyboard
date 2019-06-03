@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-BlackItalic.ttf">
+            <string>Raleway-BlackItalic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="clear_webview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;a href=&quot;https://kezzi.co&quot;&gt;Hello World&lt;/a&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2C-Th-9S7" customClass="WKWebviewLabel" customModule="clear_webview" customModuleProvider="target">
+                                <rect key="frame" x="22" y="110" width="370" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-BlackItalic" family="Raleway Black" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;a href=&quot;https://kezzi.co&quot;&gt;Hello World&lt;/a&gt; not link text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb5-j0-G3v" customClass="WKWebviewLabel" customModule="clear_webview" customModuleProvider="target">
+                                <rect key="frame" x="22" y="181.5" width="370" height="38"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;a href=&quot;https://kezzi.co&quot;&gt;Hello World😁&lt;/a&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xl8-MX-XZx" customClass="WKWebviewLabel" customModule="clear_webview" customModuleProvider="target">
+                                <rect key="frame" x="22" y="241.5" width="370" height="106"/>
+                                <fontDescription key="fontDescription" name="Raleway-BlackItalic" family="Raleway Black" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ4-Hj-PYg">
+                                <rect key="frame" x="22" y="66" width="97" height="20"/>
+                                <fontDescription key="fontDescription" name="Raleway-BlackItalic" family="Raleway Black" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLi-xM-LPs">
+                                <rect key="frame" x="22" y="369.5" width="370" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.36332283160000001" blue="0.36634477329999998" alpha="0.29822293129999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="V34-Hb-XGI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w2C-Th-9S7" firstAttribute="top" secondItem="fQ4-Hj-PYg" secondAttribute="bottom" constant="24" id="B7y-Nw-4Kd"/>
+                            <constraint firstItem="VLi-xM-LPs" firstAttribute="top" secondItem="xl8-MX-XZx" secondAttribute="bottom" constant="22" id="C6u-Gx-eeX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xl8-MX-XZx" secondAttribute="trailing" constant="22" id="CUP-u4-PAx"/>
+                            <constraint firstItem="xl8-MX-XZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="L6k-dc-kzJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VLi-xM-LPs" secondAttribute="trailing" constant="22" id="Og9-5x-v3P"/>
+                            <constraint firstItem="fQ4-Hj-PYg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="RiJ-5T-gNc"/>
+                            <constraint firstItem="VLi-xM-LPs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="RrI-Nh-1WV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gb5-j0-G3v" secondAttribute="trailing" constant="22" id="WfY-BJ-VkH"/>
+                            <constraint firstItem="fQ4-Hj-PYg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="Zq2-EJ-GVU"/>
+                            <constraint firstItem="gb5-j0-G3v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="ag0-8a-ALR"/>
+                            <constraint firstAttribute="trailing" secondItem="w2C-Th-9S7" secondAttribute="trailing" constant="22" id="ew0-b0-qGM"/>
+                            <constraint firstItem="w2C-Th-9S7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="nSh-IW-fpI"/>
+                            <constraint firstItem="xl8-MX-XZx" firstAttribute="top" secondItem="gb5-j0-G3v" secondAttribute="bottom" constant="22" id="rfw-S5-sml"/>
+                            <constraint firstItem="gb5-j0-G3v" firstAttribute="top" secondItem="w2C-Th-9S7" secondAttribute="bottom" constant="22" id="yMs-nT-LI2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
 </document>
